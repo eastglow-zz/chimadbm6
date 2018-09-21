@@ -312,7 +312,7 @@
     f_name = ftot
     material_property_names = 'kappa fc(c) felec(c,phi_int,phi_ext,c0)'
     args = 'c phi_int phi_ext c0 dcx dcy'
-    function = '0.5*(dcx^2+dcy^2) + fc + felec'
+    function = '0.5*kappa*(dcx^2+dcy^2) + fc + felec'
     outputs = exodus
   [../]
 []
